@@ -1,0 +1,23 @@
+<form action="#" method="post">
+    <label for="nom">Nom</label>
+    <input type="text" id="nom" name="nom" required minlength="2" maxlength="30"
+           pattern="[A-Za-zÀ-ÿ '\-]{2,30}">
+
+    <label for="prenom">Prénom</label>
+    <input type="text" id="prenom" name="prenom" required minlength="2" maxlength="30"
+           pattern="[A-Za-zÀ-ÿ '\-]{2,30}">
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required maxlength="255">
+
+    <label for="tel">Téléphone</label>
+    <input type="tel" id="tel" name="tel" required pattern="[0-9]{8,15}">
+
+    <label for="activite">Activité</label>
+    <select id="activite" name="activite" required>
+        <option value="">-- Choisir --</option>
+        <option>Football</option><option>Natation</option><option>Course</option>
+    </select>
+
+    <button type="submit">Enregistrer</button>
+</form>

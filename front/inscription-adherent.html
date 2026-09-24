@@ -1,0 +1,31 @@
+<form action="#" method="post">
+    <label for="nom">Nom</label>
+    <input type="text" id="nom" name="nom" required minlength="2" maxlength="30"
+           pattern="[A-Za-zÀ-ÿ '\-]{2,30}">
+
+    <label for="prenom">Prénom</label>
+    <input type="text" id="prenom" name="prenom" required minlength="2" maxlength="30"
+           pattern="[A-Za-zÀ-ÿ '\-]{2,30}">
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required maxlength="255">
+
+    <label for="activite">Activité souhaitée</label>
+    <select id="activite" name="activite" required>
+        <option value="" disabled selected>Sélectionner une activité</option>
+        <option>Football</option><option>Natation</option><option>Course</option>
+    </select>
+
+    <label for="duree">Durée</label>
+    <select id="duree" name="duree" required>
+        <option value="" disabled selected>Sélectionner une durée</option>
+        <option>1 mois</option><option>3 mois</option>
+        <option>6 mois</option><option>12 mois</option>
+    </select>
+
+    <label for="tarif">Tarif (dt)</label>
+    <input type="text" id="tarif" name="tarif" readonly value="">
+    <!-- readonly, pas disabled : readonly reste envoyé au submit, disabled non -->
+
+    <button type="submit">S'inscrire</button>
+</form>
